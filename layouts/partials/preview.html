@@ -4,10 +4,8 @@
   </a>
   <div class="post-entry">
     {{ if .Truncated }}
-      <p>{{ .Summary }}</p>
-      <a href="{{ .Permalink }}" class="post-read-more"
-        >{{ i18n "read-more" }}</a
-      >
+      <p>{{ .Summary | plainify | truncate 500 }}</p>
+      <a href="{{ .Permalink }}" class="post-read-more">{{ i18n "read-more" }}</a>
     {{ end }}
   </div>
 
