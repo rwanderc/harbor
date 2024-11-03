@@ -113,6 +113,9 @@ h1,h2,h3,h4,h5,h6 {
   font-family: 'Roboto', Helvetica, sans-serif;
   font-weight: 800;
   color: #111111;
+}
+
+h1,h2 {
   margin-block-start: 4rem;
 }
 
